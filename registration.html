@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          h1.heading{
+               text-align: center;
+           }
+           #logo{
+               display: inline-block;
+           }
+           #rdip{
+               font-size: 25px;
+               position: absolute;
+               top: 125px;
+               right: 50px;
+           }
+           ul{
+                list-style-type:none;
+                overflow:hidden;
+                background-color:#333;
+            }
+            li{
+                float:left;
+            }
+            li a{
+                display:block;
+                color:white;
+                text-align:center;
+                padding:14px 16px;
+                text-decoration: none;
+                }
+            li a:hover{
+                background-color:#111;
+            }
+            *{
+                box-sizing: border-box;
+            }
+            label {
+                width: 25%;
+                padding: 12px 12px 12px 20px;
+                display: inline-block;
+                }
+            #confirm{
+                padding-left: 50px;
+            }
+            input[type=submit]{
+                position: absolute;
+                bottom: auto;
+                left: 3em;
+            }
+            input[type=reset]{
+                position: absolute;
+                bottom:auto;
+                right: 47em;
+            }
+        </style>
+    </head>
+        <body>
+            <h1 class="heading">REGISTRATION PAGE:</h1>
+            <div id="logo">
+                <img src="logo.png" alt="error" width="200" height="100"></br>
+            </div>
+            <div id="rdip">
+                <a href="https://serc.iiit.ac.in/rdip">RDIP</a>
+            </div>
+            <ul>
+                <li><a href="Homepage.html"><b>Home<b></a></li>
+                <li><a href="Registration.html">Registration Form</a></li>
+            </ul>
+            <form action="Details.html" method="GET">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" required></br></br>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" required></br></br>
+                <label for="Phno">Phone No:</label>
+                <input type="tel" id="Phno" name="Phno" required></br></br>
+                <label for="gender">Gender</label>
+                <input type="radio" id="Male" name="gender" value="Male" required>Male
+                <input type="radio" id="Female" name="gender" value="Female" required>Female
+                <input type="radio" id="Other" name="gender" value="Other" required>Other</br></br>
+                <label for="reason">Reason for RDIP:</label>
+                <input type="radio" name="reason" value="HTML" required>HTML
+                <input type="radio" name="reason" value="CSS" required>CSS
+                <input type="radio" name="reason" value="JavaScript" required>JavaScript</br></br>
+                <label for="college">College:</label>
+                <input type="text" id="college" name="college" required></br></br></br>
+                <div id="confirm">
+                <input type="radio" name="reason" value="I declare above details given by me are true" required="required"> I declare above details given by me are true.</br></br></br>
+                </div>
+                <input type="submit" value="Submit" required>
+                <input type="reset" value="Reset">
+            </form>
+        </body>
+</html>
