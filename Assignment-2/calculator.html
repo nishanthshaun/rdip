@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="calculator.css"/>
+        <script src="Assignment-2.js"></script>
+    </head>
+    <body>
+        <div class="main">
+        <div class="title">CALCULATOR</div>
+        <table>
+            <tr>
+                <td colspan="4"><input class="result" type="text" id="result"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="7" onclick="dis('7')"/> </td>
+                <td><input class="button" type="button" value="8" onclick="dis('8')"/> </td>
+                <td><input class="button" type="button" value="9" onclick="dis('9')"/> </td>
+                <td><input class="button" type="button" value="C" onclick="clr()"/> </td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="4" onclick="dis('4')"/> </td>
+                <td><input class="button" type="button" value="5" onclick="dis('5')"/> </td>
+                <td><input class="button" type="button" value="6" onclick="dis('6')"/> </td>
+                <td><input class="button" type="button" value="x" onclick="dis('x')"/> </td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="1" onclick="dis('1')"/> </td>
+                <td><input class="button" type="button" value="2" onclick="dis('2')"/> </td>
+                <td><input class="button" type="button" value="3" onclick="dis('3')"/> </td>
+                <td><input class="button" type="button" value="/" onclick="dis('/')"/> </td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="." onclick="dis('.')"/> </td>
+                <td><input class="button" type="button" value="0" onclick="dis('0')"/> </td>
+                <td><input class="button" type="button" value="%" onclick="dis('%')"/> </td>
+                <td><input class="button" type="button" value="*" onclick="dis('*')"/> </td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="+" onclick="dis('+')"/> </td>
+                <td><input class="button" type="button" value="-" onclick="dis('-')"/> </td>
+                <td><input class="button" type="button" value="sqrt" id="sqrt" onclick="square()"/> </td>
+                <td><input class="button" type="button" value="abs" id="abs" onclick="abs()" /> </td>
+            </tr>
+            <tr>
+                <td colspan="4"><input class="equal" type="button" value="=" onclick="solve()" /> </td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>

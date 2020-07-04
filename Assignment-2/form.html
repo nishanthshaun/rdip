@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration form</title>
+    <link rel='stylesheet' href='form.css' type='text/css' />
+    <script src="Assignment-2.js"></script>
+</head>
+
+<body onload="document.registration.userid.focus();">
+    <h1>Registration Form</h1>
+  <form name='registration' onSubmit="return formValidation();">
+        <ul>
+            <li><label for="username">Name:</label></li>
+            <li><input type="text" name="username" size="50" /></li>
+            <li><label for="phone">Phone Number:</label></li>
+            <li><input type="number" name="phone" size="50"/></li>
+            <li><label for="email">Email:</label></li>
+            <li><input type="text" name="email" size="50" /></li>
+
+            <li><input type="submit" name="submit" value="Submit" /></li>
+        </ul>
+    </form>
+</body>
+
+</html>
