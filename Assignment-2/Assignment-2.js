@@ -14,7 +14,7 @@ function solve()
 function clr() 
 {
     document.getElementById("result").value = " "
-    return 
+    return clr()
 }
 function square() 
 {
@@ -151,6 +151,7 @@ function checkAnagram() {
                 return false;
             } else {
                 resultDiv.innerHTML = "Strings are anagrams!";
+                return true;
             }
         }
     }
